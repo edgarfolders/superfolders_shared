@@ -1,0 +1,18 @@
+{
+    "name": "Superfolders-chat",
+    "private": true,
+    "dependencies": {
+        "@babel/runtime": "^7.27.6",
+        "react": "^18.3.1",
+        "react-dom": "^18.3.1"
+    },
+    "meteor": {
+        "modern": true,
+        "mainModule": {
+            "client": "client/main.jsx"
+        }
+    },
+    "scripts": {
+        "start": "meteor"
+    }
+}

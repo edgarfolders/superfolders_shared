@@ -1,0 +1,17 @@
+import RightPanelDialogBoxMyMessages from "/imports/components/RightPanelDialogBoxMyMessages";
+import RightPanelDialogBoxRobotsMessages from "/imports/components/RightPanelDialogBoxRobotsMessages";
+
+
+export default function RightPanelDialogBox() {
+  return (
+    <div>
+      <div>
+        {/* <RightPanelDialogBoxMyMessages /> */}
+      </div>
+
+      <div>
+          {/* <RightPanelDialogBoxRobotsMessages /> */}
+      </div>
+    </div>
+  );
+}
