@@ -5,6 +5,11 @@ import '/imports/css/index.css';
 import LeftPanel from "/imports/components/LeftPanel";
 import RightPanel from "/imports/components/RightPanel.jsx";
 
+ const task = [  
+  { title: "Perimeter Check", subtitle: "common task", status: "completed" },
+  { title: "Perimeter Check", subtitle: "common task", status: "completed" },
+  { title: "Perimeter Check", subtitle: "common task", status: "completed" }]
+
 export default function App() {
   return (
   <div className="game">

@@ -4,9 +4,10 @@ import React from "react";
 import TaskbarHeadingTwo from "/imports/components/TaskbarHeadingTwo";
 import TaskbarHeadingOne from "/imports/components/TaskbarHeadingOne"; 
 import TaskItem from "/imports/components/TaskItem";
-import TaskItem1 from "/imports/components/TaskItem1";
-import TaskItem2 from "/imports/components/TaskItem2";
-import TaskItem3 from "/imports/components/TaskItem3";
+import { t } from "/imports/components/TaskItem";
+// import TaskItem1 from "/imports/components/TaskItem1";
+// import TaskItem2 from "/imports/components/TaskItem2";
+// import TaskItem3 from "/imports/components/TaskItem3";
 import SchedsHeading from "/imports/components/SchedsHeading";
 import SchedsItem1 from "/imports/components/SchedsItem1";
 import SchedsItem2 from "/imports/components/SchedsItem2";
@@ -19,7 +20,7 @@ import NuclearItem4 from "/imports/components/NuclearItem4";
 import NuclearItem5 from "/imports/components/NuclearItem5";
 import NuclearItem6 from "/imports/components/NuclearItem6";
 
-export default function LeftPanel({ tasks = [] }) {
+export default function LeftPanel() {
   return (
     <div className="groups-1c">
       <TaskbarHeadingOne />
@@ -33,21 +34,23 @@ export default function LeftPanel({ tasks = [] }) {
           </div>
 
           <div className="groups-24">
-            <div>
-              <TaskItem />
-            </div>
+              <div>
+                  {t.map(task => (
+                    <TaskItem key={task._id} task={task} />
+                  ))}
+              </div>
 
-            <div>
+            {/* <div>
               <TaskItem1 />
             </div>
 
-            <div>
+            <div> 
               <TaskItem2 />
             </div>
 
             <div>
               <TaskItem3 />
-            </div>
+            </div> */}
 
             <div>
               <SchedsHeading />

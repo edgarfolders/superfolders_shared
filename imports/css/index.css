@@ -886,7 +886,7 @@ button {
   position: relative;
   width: 287px;
   height: 73px;
-  margin: 2px 0 0 16px;
+  margin: 2px 0 0 10px;
   background: rgba(0, 0, 0, 0);
   z-index: 133;
 }
@@ -900,75 +900,6 @@ button {
   border: 1px solid #357446;
   z-index: 135;
   border-radius: 6px;
-}
-.groups-26 {
-  position: absolute;
-  width: 287px;
-  height: 71px;
-  right: 0;
-  bottom: 0;
-  background: rgba(0, 0, 0, 0);
-  z-index: 134;
-}
-.image-27 {
-  position: absolute;
-  width: 48px;
-  height: 48px;
-  right: 220px;
-  bottom: 12px;
-  background: url(https://codia-f2c.s3.us-west-1.amazonaws.com/image/2025-07-31/xWwZpbwcBx.png)
-    no-repeat center;
-  background-size: cover;
-  z-index: 139;
-  border-radius: 8px;
-}
-.flex-column-f {
-  position: absolute;
-  width: 127px;
-  height: 44px;
-  right: 77px;
-  bottom: 15px;
-  font-size: 0px;
-  z-index: 138;
-}
-.perimeter-check {
-  display: block;
-  position: relative;
-  height: 21px;
-  margin: 0 0 0 0;
-  color: #729c78;
-  font-family: Inter, var(--default-font-family);
-  font-size: 14.5px;
-  font-weight: 400;
-  line-height: 17.548px;
-  text-align: left;
-  white-space: nowrap;
-  z-index: 138;
-}
-.completed {
-  display: block;
-  position: relative;
-  height: 20px;
-  margin: 3px 0 0 0;
-  color: #79a27f;
-  font-family: Inter, var(--default-font-family);
-  font-size: 13.699999809265137px;
-  font-weight: 400;
-  line-height: 16.58px;
-  text-align: left;
-  white-space: nowrap;
-  z-index: 137;
-}
-.background-28 {
-  position: absolute;
-  width: 12px;
-  height: 12px;
-  right: 26px;
-  bottom: 30px;
-  background: url(https://codia-f2c.s3.us-west-1.amazonaws.com/image/2025-07-31/YM9onNML0n.png)
-    no-repeat center;
-  background-size: cover;
-  z-index: 136;
 }
 .groups-29 {
   position: relative;
