@@ -5,9 +5,6 @@ import TaskbarHeadingTwo from "/imports/components/TaskbarHeadingTwo";
 import TaskbarHeadingOne from "/imports/components/TaskbarHeadingOne"; 
 import TaskItem from "/imports/components/TaskItem";
 import { t } from "/imports/components/TaskItem";
-// import TaskItem1 from "/imports/components/TaskItem1";
-// import TaskItem2 from "/imports/components/TaskItem2";
-// import TaskItem3 from "/imports/components/TaskItem3";
 import SchedsHeading from "/imports/components/SchedsHeading";
 import SchedsItem1 from "/imports/components/SchedsItem1";
 import SchedsItem2 from "/imports/components/SchedsItem2";
@@ -40,17 +37,10 @@ export default function LeftPanel() {
                   ))}
               </div>
 
-            {/* <div>
-              <TaskItem1 />
-            </div>
+            {/* 
 
-            <div> 
-              <TaskItem2 />
-            </div>
 
-            <div>
-              <TaskItem3 />
-            </div> */}
+*/}
 
             <div>
               <SchedsHeading />
