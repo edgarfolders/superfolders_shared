@@ -7,10 +7,12 @@ import TaskItem from "/imports/components/TaskItem";
 import { t } from "/imports/components/TaskItem";
 import SchedsHeading from "/imports/components/SchedsHeading";
 import SchedsItem1 from "/imports/components/SchedsItem1";
+import { s } from "/imports/components/SchedsItem1";
 import SchedsItem2 from "/imports/components/SchedsItem2";
 import NuclearHeading from "/imports/components/NuclearHeading";
 import NuclearDesc from "/imports/components/NuclearDesc";
 import NuclearItem1 from "/imports/components/NuclearItem1";
+import { n } from "/imports/components/NuclearItem1";
 import NuclearItem2 from "/imports/components/NuclearItem2";
 import NuclearItem3 from "/imports/components/NuclearItem3";
 import NuclearItem4 from "/imports/components/NuclearItem4";
@@ -47,13 +49,11 @@ export default function LeftPanel() {
             </div>
 
             <div>
-              <SchedsItem1 />
+              {s.map(sched => (
+                <SchedsItem1 key={sched.sched_id} sched={sched} />
+              ))}
             </div>
 
-            <div>
-              <SchedsItem2 />
-            </div>
-            
             <div>
               <NuclearHeading />
             </div>
@@ -63,28 +63,12 @@ export default function LeftPanel() {
             </div>
 
             <div>
-              <NuclearItem1 />
+              {n.map(nuclear => (
+                <NuclearItem1 key={nuclear.nuclear_id} nuclear={nuclear} />
+              ))}
             </div>
 
-            <div>
-              <NuclearItem2 />
-            </div>
 
-            <div>
-              <NuclearItem3 />
-            </div>
-
-            <div>
-              <NuclearItem4 />
-            </div>
-
-            <div>
-              <NuclearItem5 />
-            </div>
-
-            <div>
-              <NuclearItem6 />
-            </div>
           </div>
         </div>
       </div>
