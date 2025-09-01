@@ -2,7 +2,9 @@ import React from "react";
 import RightPanelHeading from "/imports/components/RightPanelHeading.jsx";
 import PhotoReports from "/imports/components/PhotoReports.jsx";
 import MyMessage from "/imports/components/MyMessage.jsx";
+import { mm } from "/imports/components/MyMessage.jsx";
 import RobotsMessage from "/imports/components/RobotsMessage.jsx";
+import { rm } from "/imports/components/RobotsMessage.jsx";
 
 export default function RightPanel() {
   return (
@@ -10,8 +12,17 @@ export default function RightPanel() {
       <RightPanelHeading />
 
     
-      <MyMessage />
-      <RobotsMessage />
+      <div>
+        {mm.map(mymessage => (
+          <MyMessage key={mymessage.mymessage_id} mymessage={mymessage} />
+        ))}
+      </div>
+
+      <div>
+        {rm.map(robotsmessage => (
+          <RobotsMessage key={robotsmessage.robotsmessage_id} robotsmessage={robotsmessage} />
+        ))}
+      </div>
 
       <PhotoReports />
       

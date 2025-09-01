@@ -11,7 +11,7 @@ export default function SchedsItem1( { sched } ) {
     <div className="groups-5f">
       <div className="background-60">
         <div className="image-61"></div>
-        <span className="equipment-62">{sched.title}.</span>
+        <span className="equipment-62">{sched.title}</span>
         <div className="image-63"></div>
         <span className="tuesdays-at-9am">{sched.time}</span>
       </div>
